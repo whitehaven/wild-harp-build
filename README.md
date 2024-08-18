@@ -29,3 +29,4 @@ Nearing final build.
 
 - [x] removed excess 5V BEC cable
 - [ ] enable gyroflow logging: https://ardupilot.org/plane/docs/common-gyroflow.html
+- [ ] figure out VTX control from FC
