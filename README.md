@@ -35,6 +35,12 @@ For second launch, I triggered Autotakeoff with a fake throw and then threw it. 
 1. VTX mount updated for better fit with the raised 20x20mm mounting holes which face down in my build. It is an excellent fit. It was also dropped 5mm total height and the bottom was squared off and thickened for a little better crash resistance.
 1. Reassembly of the wood-foam interface will be done with hot glue and foam-safe CA glue has proven too brittle.
 
+### 2024-08-22 - **Flight 002**
+
+Successful flight with full PID tuning. Nose cone blew off apparently during flight. Reviewed footage, can't see when it was lost but it was not near the landing site. Landing was way too fast and hard, which broke the L wingtip almost off, leaving only the front 2cm attached. The breakpoint was just lateral to the primary carbon spar, which makes sense.
+
+PID tuning is good though, and found a pretty good place to fly.
+
 ## TODO
 
 ### TODO/Critical
@@ -42,7 +48,8 @@ For second launch, I triggered Autotakeoff with a fake throw and then threw it. 
 - [x] design VTX mount and probably baseplate
 - [x] design and print camera mount
 - [x] finalize cable management
-- [ ] re-attach front wood plate with hot glue
+- [ ] repair wingtip fracture
+- [ ] engineer 3d printable nose cone
 
 ### TODO/Recommended
 
