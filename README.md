@@ -1,6 +1,6 @@
 # wild-harp-build
 
-My ardupilot-based Speedybee F405 Wing AtomRC Dolphin plane's software and CAD components.
+Build log and unique components of my AtomRC Dolphin, built with with Speedybee F405 Wing App FC stack running Ardupilot 4.5.5.
 
 ## Build Log
 
@@ -35,31 +35,48 @@ For second launch, I triggered Autotakeoff with a fake throw and then threw it. 
 1. VTX mount updated for better fit with the raised 20x20mm mounting holes which face down in my build. It is an excellent fit. It was also dropped 5mm total height and the bottom was squared off and thickened for a little better crash resistance.
 1. Reassembly of the wood-foam interface will be done with hot glue and foam-safe CA glue has proven too brittle.
 
+#### Tasks resolved
+
+- [x] design and print shorter version of VTX mount
+- [x] design and print camera mount
+- [x] removed excess 5V BEC cable
+- [x] enable gyroflow logging: <https://ardupilot.org/plane/docs/common-gyroflow.html>
+
 ### 2024-08-22 - **Flight 002**
 
 Successful flight with full PID tuning. Nose cone blew off apparently during flight. Reviewed footage, can't see when it was lost but it was not near the landing site. Landing was way too fast and hard, which broke the L wingtip almost off, leaving only the front 2cm attached. The breakpoint was just lateral to the primary carbon spar, which makes sense.
 
 PID tuning is good though, and found a pretty good place to fly.
 
+#### Tasks resolved
+
+- [x] figure out VTX control from FC
+
 ### 2024-08-26 - *Terrain! Terrain! Pull Up!*
 
 Found an old SD card which I can use to support a terrain database. Surrounding files were loaded to total size of 222 MB on disc, leaving >3GB for logging. Confirmed logging is active for next flights.
 
-## TODO
+#### Tasks resolved
 
-### TODO/Critical
-
-- [x] design VTX mount and probably baseplate
-- [x] design and print camera mount
-- [x] finalize cable management
 - [x] repair wingtip fracture
-- [ ] engineer 3d printable nose cone
-
-### TODO/Recommended
-
-- [x] removed excess 5V BEC cable
-- [x] enable gyroflow logging: <https://ardupilot.org/plane/docs/common-gyroflow.html>
-- [ ] figure out VTX control from FC
-- [x] enable terrain
+- [x] finalize cable management
 - [x] from <https://terrain.ardupilot.org/>: **If using the SRTM1 data, set ArduPilot's TERRAIN_SPACING parameter to 30** before loading the data to the SD card. For SRTM3 data set TERRAIN_SPACING to the default of 100.
+- [x] enable terrain
+
+### 2024-08-27 - **Waiting for a nose**
+
+Need nose, but nose needs alternate mounting system other than magnets due to tendency to disloge immediately.
+
+---
+
+## Open TODOs
+
+### Bench Tasks
+
+- [ ] bench test low RSSI for optimal ELRS rate
+- [ ] engineer 3d printable nose cone
+- [ ] hot glue strain relief and mounts
+
+### Field Tests
+
 - [ ] test terrain (may need to be live on field)
