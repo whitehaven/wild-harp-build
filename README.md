@@ -41,6 +41,10 @@ Successful flight with full PID tuning. Nose cone blew off apparently during fli
 
 PID tuning is good though, and found a pretty good place to fly.
 
+### 2024-08-26 - *Terrain! Terrain! Pull Up!*
+
+Found an old SD card which I can use to support a terrain database. Surrounding files were loaded to total size of 222 MB on disc, leaving >3GB for logging. Confirmed logging is active for next flights.
+
 ## TODO
 
 ### TODO/Critical
@@ -48,11 +52,14 @@ PID tuning is good though, and found a pretty good place to fly.
 - [x] design VTX mount and probably baseplate
 - [x] design and print camera mount
 - [x] finalize cable management
-- [ ] repair wingtip fracture
+- [x] repair wingtip fracture
 - [ ] engineer 3d printable nose cone
 
 ### TODO/Recommended
 
 - [x] removed excess 5V BEC cable
-- [ ] enable gyroflow logging: <https://ardupilot.org/plane/docs/common-gyroflow.html>
+- [x] enable gyroflow logging: <https://ardupilot.org/plane/docs/common-gyroflow.html>
 - [ ] figure out VTX control from FC
+- [x] enable terrain
+- [x] from <https://terrain.ardupilot.org/>: **If using the SRTM1 data, set ArduPilot's TERRAIN_SPACING parameter to 30** before loading the data to the SD card. For SRTM3 data set TERRAIN_SPACING to the default of 100.
+- [ ] test terrain (may need to be live on field)
