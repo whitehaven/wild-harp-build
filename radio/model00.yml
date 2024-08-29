@@ -1,6 +1,6 @@
 semver: 2.8.4
 header: 
-   name: "BOXER"
+   name: "Wild Harp"
 timers: 
    0:
       start: 0
@@ -409,7 +409,7 @@ rfAlarms:
    critical: 42
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
-jitterFilter: GLOBAL
+jitterFilter: ON
 moduleData: 
    0:
       type: TYPE_CROSSFIRE
