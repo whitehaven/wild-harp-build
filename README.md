@@ -67,6 +67,24 @@ Found an old SD card which I can use to support a terrain database. Surrounding 
 
 Need nose, but nose needs alternate mounting system other than magnets due to tendency to disloge immediately.
 
+### 2024-09-01 - **Hot Shot**
+
+Just finished nose mounting system and a suitable nose. Went for quick flight at my new favorite place cut very short by VTX overheat, probably related to hot climate today (85F) and, in retrospect, fairly low airflow through new nose cone. Had to make for a quick landing, which resulted in wingtip tear much like my last landing. Will need to fix, but VTX overheat is also a big problem.
+
+Noticing difficulty finding craft after landing - needs working beeper function.
+
+Black box was enabled but the SD card had weird partitioning from Rasberry Pi use - formatted and now working (on the bench, that is).
+
+#### Tasks discovered
+
+- [ ] repair wingtip tear
+- [ ] work out VTX cooling
+
+#### Tasks resolved
+
+- [x] engineer 3d printable nose cone and mount system
+- [x] enable blackbox logging
+
 ---
 
 ## Open TODOs
@@ -74,9 +92,12 @@ Need nose, but nose needs alternate mounting system other than magnets due to te
 ### Bench Tasks
 
 - [ ] bench test low RSSI for optimal ELRS rate
-- [ ] engineer 3d printable nose cone
 - [ ] hot glue strain relief and mounts
+- [ ] repair wingtip tear
+- [ ] set up motor or other locator beep
+- [ ] work out VTX cooling
 
 ### Field Tests
 
+- [ ] establish stall and max speeds for autopilot and landing tuning
 - [ ] test terrain (may need to be live on field)
