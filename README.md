@@ -117,3 +117,31 @@ Nose cone has minimal air entry
 ## Future Directions
 
 - rebuild as VTOL for better landings
+
+---
+
+## Suggestions for builders
+
+### Theory
+
+1. Consider repairabilty and durability. **Crashes and damage are guaranteed.** Fortunately much of the expensive stuff doesn't fly (FPV goggles, radio, soldering tooling). See my [first](#2024-08-17---flight-001-controlled-flight-into-terrain), [second](#2024-08-22---flight-002-at-what-cost), and [third](#2024-09-01---flight-003-hot-shot) flights which all ended with damage.
+
+### Hardware
+
+#### Body
+
+1. **Consider a traditional wingplan** rather than essentially a long-bodied flying wing. It requires a lot of speed to stay up, which makes every phase of flight quite difficult. I would consider the AtomRC Dolphin to be an intermediate-level plane.
+1. **Avoid CA glue**, *even [foam-safe varieties](https://bsi-inc.com/hardware/super_gold_plus.html)*. CA glue's failure mode is brittle which does not pair well with foam. Partial exception for rigid or small contact areas. **Use hot glue at low-temp** (on two-temp glue gun) **or maybe [FoamTac](https://www.beaconadhesives.com/product/foam-tac/)**, but I haven't tried that.
+1. Hot glue at low-temp is good for most tasks. It is suprisingly, even shockingly robust to me, having thought of it as a craft-only solution before now. I got a [midrange two-temp gun](https://www.amazon.com/Surebonder-PRO2-100-100-Watt-Temperature-Industrial/dp/B006IY359K), and the strength is only a bit less than I am concerned with UV resistance. It seems to slightly melt, and thus weld, to syrofoam (I haven't messed with low-melt glues, which I believe is something besides using normal sticks on high or low temp.) Hot glue can be sculpted well while hot and trimmed away when cold. One or the other may be convenient for an application.
+1. **VHB tape is superb** for mounting components. I crashed my plane quite hard nose-first on its first flight during a [dropped-wing event](#2024-08-17---flight-001-controlled-flight-into-terrain), and even though the FC module came off the styrofoam, it stuck back down after one attempt, and holds the entire plane's weight when held from the mount plate.
+
+### Software
+
+#### Radiomaster Boxer / ELRS
+
+1. Take time to program radio control profiles and understand what you are broadcasting.
+1. Bench test ELRS
+
+#### Ardupilot
+
+1. While Ardupilot is incredible, I would consider it *inaccessible for a unassisted non-technical user*. I have been building computers, programming (including a minor in computer science), and flying drones for many years. Allowing for the fact that I did not have any experienced folks to discuss this process, I would consider myself appropriately qualified. I have struggled to learn Ardupilot given partial documentation and difficulty with testing.
