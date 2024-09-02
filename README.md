@@ -99,13 +99,14 @@ Nose cone has minimal air entry
 
 ---
 
-## Open TODOs
+## Open Tasks
+
+Ongoing task list by context. They should be sorted by priority, then descending alphabetically. They are created when logged as opened, and removed to the logs when completed. Projects steps are indented (until I think of something better).
 
 ### Bench Tasks
 
+- [ ] **#nondispatcheable** repair R wingtip tear
 - [ ] bench test ELRS for optimal ELRS rate
-- [ ] hot glue strain relief and mounts
-- [ ] repair R wingtip tear
 - [ ] set up motor or other locator beep
 - [ ] work out VTX cooling/configurability
   - [ ] attach VTX_POWER to RC potentiometer to manually adjust
@@ -116,8 +117,15 @@ Nose cone has minimal air entry
 - [ ] establish stall and max speeds for autopilot and landing tuning
 - [ ] test terrain (may need to be live on field)
 
+### Publication
+
+- [ ] post VTX models to Printables
+- [ ] post camera mount models to Printables
+- [ ] post FC mount models to Printables
+
 ## Future Directions
 
+- laminate entire body with clear wrap for added strength and lower drag.
 - rebuild as VTOL for better landings
 
 ---
