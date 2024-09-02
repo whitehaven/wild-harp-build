@@ -18,7 +18,7 @@ Build log and unique components of my AtomRC Dolphin, built with with Speedybee 
 
 Nearing final build.
 
-### 2024-08-17  - **Flight 001**
+### 2024-08-17 - **Flight 001: Controlled Flight Into Terrain**
 
 Finally took it out to fly. First launch with Autotakeoff didn't reach full throttle fast enough and soft-landed. No damage.
 
@@ -42,7 +42,7 @@ For second launch, I triggered Autotakeoff with a fake throw and then threw it. 
 - [x] removed excess 5V BEC cable
 - [x] enable gyroflow logging: <https://ardupilot.org/plane/docs/common-gyroflow.html>
 
-### 2024-08-22 - **Flight 002**
+### 2024-08-22 - **Flight 002: At What Cost**
 
 Successful flight with full PID tuning. Nose cone blew off apparently during flight. Reviewed footage, can't see when it was lost but it was not near the landing site. Landing was way too fast and hard, which broke the L wingtip almost off, leaving only the front 2cm attached. The breakpoint was just lateral to the primary carbon spar, which makes sense.
 
@@ -67,9 +67,11 @@ Found an old SD card which I can use to support a terrain database. Surrounding 
 
 Need nose, but nose needs alternate mounting system other than magnets due to tendency to disloge immediately.
 
+#### Task opened
+
 - [ ] engineer 3d printable nose cone and mount system (`nose\beak elliptical nose.SLDPRT`, `nose\nose mount.SLDPRT`)
 
-### 2024-09-01 - **Hot Shot**
+### 2024-09-01 - **Flight 003: Hot Shot**
 
 Just finished nose mounting system and a suitable nose. Went for quick flight at my new favorite place cut very short by VTX overheat, probably related to hot climate today (85F) and, in retrospect, fairly low airflow through new nose cone. Had to make for a quick landing, which resulted in wingtip tear much like my last landing. Will need to fix, but VTX overheat is also a big problem.
 
