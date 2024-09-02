@@ -81,7 +81,9 @@ Black box was enabled but the SD card had weird partitioning from Rasberry Pi us
 
 Time set on Goggles X with file - will save to make it easy in the future.
 
-Nose cone has minimal air entry
+Nose cone has minimal air entry and it seems overly heavy (27g + 3 M3 hex cap screws). Will probably try sawing it coronally to see if this obviates having to model a new one.
+
+Mounting device is 18g before 5x threaded inserts.
 
 #### Tasks resolved
 
@@ -89,13 +91,28 @@ Nose cone has minimal air entry
 - [x] enable blackbox logging
 - [x] set time and FCC mode on Goggles X (files added which are copied to sd card)
 
-#### Tasks discovered
+#### Tasks opened
 
 - [ ] repair R wingtip tear
 - [ ] set triggerable lost craft sound
 - [ ] work out VTX cooling/configurability
   - [ ] attach VTX_POWER to RC potentiometer to manually adjust
-  - [ ] ?engineer higher-flow nose cone
+  - [ ] ?cut or engineer higher-flow nose cone
+
+### 2024-09-02 - **Plane Posting**
+
+[Posted nose cone to Printables for clout.](https://www.printables.com/model/993617-atomrc-dolphin-nose-mount-and-cones)
+
+#### Tasks resolved
+
+- [x] hot glue strain relief and mounts
+- [x] post nose cone to Printables with hole pattern specification
+
+#### Tasks opened
+
+- [ ] post camera mount models to Printables
+- [ ] post FC mount models to Printables
+- [ ] post VTX models to Printables
 
 ---
 
