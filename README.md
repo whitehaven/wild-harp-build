@@ -4,12 +4,12 @@ Build log and unique components of my AtomRC Dolphin, built with with Speedybee 
 
 ## Build Log
 
-### 2024-07-29
+### 2024-07-29 - **Build Start**
 
 - adding the basic param dumps, already with my basic configuration, near ready to fly. No flights yet, by the way.
 - added CAD (onshape) files I used to mount the FC to the baseplate. My one complaint is the flanges on the top portion came out too thin. That said, I have reefed on it a bit and I think it's sufficient. Would thicken if doing it again.
 
-### 2024-08-01
+### 2024-08-01 - **Ground Tuning**
 
 - reversed incorrect pitch in radio per directions
 - printed "aerodynamic" fpv camera mount (Avatar HD V1), fit is ok, a little too large so bends in ~1mm total when attached
@@ -52,13 +52,13 @@ PID tuning is good though, and found a pretty good place to fly.
 
 - [x] figure out VTX control from FC
 
-### 2024-08-26 - *Terrain! Terrain! Pull Up!*
+### 2024-08-26 - ***Terrain! Terrain! Pull Up!***
 
 Found an old SD card which I can use to support a terrain database. Surrounding files were loaded to total size of 222 MB on disc, leaving >3GB for logging. Confirmed logging is active for next flights.
 
 #### Tasks resolved
 
-- [x] repair wingtip fracture
+- [x] repair L wingtip fracture
 - [x] finalize cable management
 - [x] from <https://terrain.ardupilot.org/>: **If using the SRTM1 data, set ArduPilot's TERRAIN_SPACING parameter to 30** before loading the data to the SD card. For SRTM3 data set TERRAIN_SPACING to the default of 100.
 - [x] enable terrain
@@ -66,6 +66,8 @@ Found an old SD card which I can use to support a terrain database. Surrounding 
 ### 2024-08-27 - **Waiting for a nose**
 
 Need nose, but nose needs alternate mounting system other than magnets due to tendency to disloge immediately.
+
+- [ ] engineer 3d printable nose cone and mount system (`nose\beak elliptical nose.SLDPRT`, `nose\nose mount.SLDPRT`)
 
 ### 2024-09-01 - **Hot Shot**
 
@@ -77,16 +79,21 @@ Black box was enabled but the SD card had weird partitioning from Rasberry Pi us
 
 Time set on Goggles X with file - will save to make it easy in the future.
 
-#### Tasks discovered
-
-- [ ] repair wingtip tear
-- [ ] work out VTX cooling
+Nose cone has minimal air entry
 
 #### Tasks resolved
 
-- [x] engineer 3d printable nose cone and mount system
+- [x] engineer 3d printable nose cone and mount system (`nose\beak elliptical nose.SLDPRT`, `nose\nose mount.SLDPRT`)
 - [x] enable blackbox logging
 - [x] set time and FCC mode on Goggles X (files added which are copied to sd card)
+
+#### Tasks discovered
+
+- [ ] repair R wingtip tear
+- [ ] set triggerable lost craft sound
+- [ ] work out VTX cooling/configurability
+  - [ ] attach VTX_POWER to RC potentiometer to manually adjust
+  - [ ] ?engineer higher-flow nose cone
 
 ---
 
@@ -94,13 +101,19 @@ Time set on Goggles X with file - will save to make it easy in the future.
 
 ### Bench Tasks
 
-- [ ] bench test low RSSI for optimal ELRS rate
+- [ ] bench test ELRS for optimal ELRS rate
 - [ ] hot glue strain relief and mounts
-- [ ] repair wingtip tear
+- [ ] repair R wingtip tear
 - [ ] set up motor or other locator beep
-- [ ] work out VTX cooling
+- [ ] work out VTX cooling/configurability
+  - [ ] attach VTX_POWER to RC potentiometer to manually adjust
+  - [ ] ?engineer higher-flow nose cone
 
 ### Field Tests
 
 - [ ] establish stall and max speeds for autopilot and landing tuning
 - [ ] test terrain (may need to be live on field)
+
+## Future Directions
+
+- rebuild as VTOL for better landings
