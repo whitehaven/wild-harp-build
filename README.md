@@ -75,6 +75,8 @@ Noticing difficulty finding craft after landing - needs working beeper function.
 
 Black box was enabled but the SD card had weird partitioning from Rasberry Pi use - formatted and now working (on the bench, that is).
 
+Time set on Goggles X with file - will save to make it easy in the future.
+
 #### Tasks discovered
 
 - [ ] repair wingtip tear
@@ -84,6 +86,7 @@ Black box was enabled but the SD card had weird partitioning from Rasberry Pi us
 
 - [x] engineer 3d printable nose cone and mount system
 - [x] enable blackbox logging
+- [x] set time and FCC mode on Goggles X (files added which are copied to sd card)
 
 ---
 
