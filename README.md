@@ -142,10 +142,21 @@ A servo 4 also had some autotrim changes which are added here.
 - [ ] FBWB -> Cruise instead
 - [ ] landing altitude problem fix
 - [ ] landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html)
-- [ ] make charger case/box
-- [ ] landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html):
+- [ ] make D6 charger case/box
 
+### 2024-09-06 - **?**
 
+Planned obj:
+
+- [ ] establish stall/min speed in `FBWA` and `Manual`
+- [ ] establish maximum continuous speed in level flight
+- [ ] do a loop in `ACRO` or `Manual`
+
+(then set appropriate settings for autopilot)
+
+#### Tasks resolved
+
+?
 
 ---
 
