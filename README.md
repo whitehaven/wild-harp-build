@@ -105,10 +105,10 @@ Mounting device is 18g before 5x threaded inserts.
 
 #### Tasks resolved
 
-- [x] hot glue strain relief and mounts
-- [x] repair R wingtip
-- [x] post nose cone to Printables with hole pattern specification
 - [x] added `exp_` and Solidworks temp file prefix to `.gitignore` to declutter git scanning
+- [x] hot glue strain relief and mounts
+- [x] post nose cone to Printables with hole pattern specification
+- [x] repair R wingtip
 
 #### Tasks opened
 
