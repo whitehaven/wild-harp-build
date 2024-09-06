@@ -106,6 +106,7 @@ Mounting device is 18g before 5x threaded inserts.
 #### Tasks resolved
 
 - [x] hot glue strain relief and mounts
+- [x] repair R wingtip
 - [x] post nose cone to Printables with hole pattern specification
 - [x] added `exp_` and Solidworks temp file prefix to `.gitignore` to declutter git scanning
 
@@ -114,6 +115,37 @@ Mounting device is 18g before 5x threaded inserts.
 - [ ] post camera mount models to Printables
 - [ ] post FC mount models to Printables
 - [ ] post VTX models to Printables
+
+### 2024-09-03 - **Flight 004: Now You're Talking**
+
+Excellent flight with use of `SiK` telemetry radio, which permitted a much improved control regime. I was able to activate autonomous modes when I needed to manipulate settings or plan for landing, which was a great help.
+
+Landing mode was employed. The setup and approach were picture-perfect, however due to barometer drift the final/flare started at about 30ft AGL. Seeing that it was going to overshoot the landing area, I took over with `FWBA`, but I believe between abrupt throttle-up and L roll I suffered a stall and slapped the plane down on its belly. It fell in an oddly drifting manner. I have activated a setting which allows a momentary high throttle input to trigger a "go-around" which behaves similar to takeoff mode, which would have been preferable.
+
+I think this has taught me that it has a slower minimum speed than I would have predicted, which I need to formally establish.
+
+A servo 4 also had some autotrim changes which are added here.
+
+### Tasks completed
+
+- [x] added base checklist to avoid forgetting stuff on the way out to the field
+- [x] change OSD to mph
+- [x] increase loiter radius to reduce violence of turning from R / CW circling radius 50m to L / CCW circling radius 100m
+- [x] landing abort throttle up mode on
+- [x] set up motor or other locator beep
+- [x] takeoff distance increased to reflect typical airfield size
+- [x] UART4 configured as SiK radio interface with appropriate rates
+
+### Tasks opened
+
+- [ ] change ELRS rate to 150 for range
+- [ ] FBWB -> Cruise instead
+- [ ] landing altitude problem fix
+- [ ] landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html)
+- [ ] make charger case/box
+- [ ] landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html):
+
+
 
 ---
 
@@ -129,10 +161,15 @@ Ongoing task list by context. They should be sorted by priority, then descending
 - [ ] work out VTX cooling/configurability
   - [ ] attach VTX_POWER to RC potentiometer to manually adjust
   - [ ] ?engineer higher-flow nose cone
+- [ ] **`investigation`** landing altitude problem fix
+- [ ] change ELRS rate to 150Hz for range
+- [ ] FBWB -> Cruise instead
+- [ ] landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html):
+- [ ] make D6 charger case/box
 
 ### Field Tests
 
-- [ ] establish stall and max speeds for autopilot and landing tuning
+- [ ] establish stall/min and max reliable speeds for autopilot and landing tuning
 - [ ] test terrain (may need to be live on field)
 
 ### Publication
@@ -143,7 +180,8 @@ Ongoing task list by context. They should be sorted by priority, then descending
 
 ## Future Directions
 
-- laminate entire body with clear wrap for added strength and lower drag.
+- redesign nose cone for improved aerodynamics
+- laminate entire body with clear wrap for added strength and lower drag
 - rebuild as VTOL for better landings
 
 ---
