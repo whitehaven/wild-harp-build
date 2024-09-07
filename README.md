@@ -164,6 +164,7 @@ I noticed that I have no power measurements on OSD except for used mAh. This is 
 
 #### Tasks completed
 
+- [x] FBWB replaced with Cruise
 - [x] improved MAGfit compass calibration
 
 ---
