@@ -144,9 +144,17 @@ A servo 4 also had some autotrim changes which are added here.
 - [ ] landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html)
 - [ ] make D6 charger case/box
 
-### 2024-09-06 - **?**
+### 2024-09-06 - **Flight 005 - Do The Loop**
 
-Planned obj:
+Some connectivity annoyances to start, and some odd dudes in parking lot, but ultimately got it up and stable.
+
+After action review shows strange orientation problems. Plane shows as oriented away from trajectory. MAG fit repeated and improved. Complex compensators like battery current and iron matrix assessed but do not improve calibration much. New scalars did improve calibration significantly, though.
+
+Managed to do a loop in `ACRO` - I am finding the *Harp* quite darty and enjoyable to fly manually. It was quite tight: ***.
+
+I noticed that I have no power measurements on OSD except for used mAh. This is not ideal.
+
+#### Tasks opened
 
 - [ ] establish stall/min speed in `FBWA` and `Manual`
 - [ ] establish maximum continuous speed in level flight
@@ -154,9 +162,9 @@ Planned obj:
 
 (then set appropriate settings for autopilot)
 
-#### Tasks resolved
+#### Tasks completed
 
-?
+- [x] improved MAGfit compass calibration
 
 ---
 
