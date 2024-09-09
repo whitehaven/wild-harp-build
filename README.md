@@ -150,7 +150,7 @@ Some connectivity annoyances to start, and some odd dudes in parking lot, but ul
 
 After action review shows strange orientation problems. Plane shows as oriented away from trajectory. MAG fit repeated and improved. Complex compensators like battery current and iron matrix assessed but do not improve calibration much. New scalars did improve calibration significantly, though.
 
-Managed to do a loop in `ACRO` - I am finding the *Harp* quite darty and enjoyable to fly manually. It was quite tight, probably no larger than 30ft vertically. `FBWA` is quite sheltered,
+Managed to do a loop in `ACRO` - I am finding the *Harp* quite darty and enjoyable to fly manually. It was quite tight, confirmed 40-50ft diameter on OSD replay. `FBWA` is quite sheltered, it seems.
 
 I noticed that I have no power measurements on OSD except for used mAh. This is not ideal.
 
@@ -172,12 +172,15 @@ Cooling is not a problem, but I am concerned the nose cone (which I cut open wid
 
 #### Tasks completed
 
+- [x] ?engineer higher-flow lower-drag nose cone
 - [x] **`investigation`** landing altitude problem fix - manual control to guide glideslope was acceptable alone
 - [x] change ELRS rate to 150Hz for range (cancelled - was not a limiting factor)
 - [x] FBWB replaced with Cruise
+- [x] improve VTX cooling problem
 - [x] improved MAGfit compass calibration
 - [x] level stall speed estimated 7.5 m/s = 16.777 mph, will set minimum airspeed accordingly to 120% = 9 m/s, which is the default value
 - [x] MAVlink updated and set recommended parameters for SiK telemetry radio
+- [x] test terrain (may need to be live on field)
 
 ### 2024-09-08 - **Motor Mount**
 
@@ -188,7 +191,8 @@ From there:
 
 #### Tasks completed
 
-- [x] model and build replacement motor mount
+- [x] model and build replacement motor mount, posted to [Printables](https://www.printables.com/model/1001244-atomrc-dolphin-motor-mount-with-adapter)
+- [x] added script to remove readonly fields from Ardupilot param dumps to reduce errors with manual removal
 
 ---
 
@@ -198,19 +202,16 @@ Ongoing task list by context. They should be sorted by priority, then descending
 
 ### Bench Tasks
 
+- [ ] attach VTX_POWER to RC potentiometer to manually adjust
 - [ ] get OSD current monitor to actually display (was 0.0 all flight)
 - [ ] make D6 charger case/box
 - [ ] set up %, V/cell, or something in OSD
-- [ ] work out VTX cooling/configurability
-  - [ ] attach VTX_POWER to RC potentiometer to manually adjust
-  - [ ] ?engineer higher-flow nose cone
 
 ### Field Tests
 
 - [ ] autolearn compass (`COMPASS_LEARN` = 3; fly until `have earth field` then `finished` appear)
 - [ ] establish maximum continuous speed in level flight
 - [ ] establish most efficient cruise speed (will require several straight and level runs at different speeds)
-- [ ] test terrain (may need to be live on field)
 
 ### Publication
 
