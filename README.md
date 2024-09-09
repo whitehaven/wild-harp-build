@@ -178,6 +178,17 @@ Cooling is still not a problem.
 - [x] change ELRS rate to 150Hz for range (cancelled - was not a limiting factor)
 - [x] improved MAGfit compass calibration
 
+### 2024-09-08 - **Motor Mount**
+
+Overengineered motor mount adapter made. Posted to [Printables](https://www.printables.com/model/1001244-atomrc-dolphin-motor-mount-with-adapter).
+
+From there:
+> As many do, I broke my balsa motor mount and need a stronger one. Similar to others I found, but using M3 threaded inserts instead of nuts or direct threading. Adapts to my motor plate (the stock one) at 16mm x 16mm.
+
+#### Tasks completed
+
+- [x] model and build replacement motor mount
+
 ---
 
 ## Open Tasks
