@@ -150,7 +150,7 @@ Some connectivity annoyances to start, and some odd dudes in parking lot, but ul
 
 After action review shows strange orientation problems. Plane shows as oriented away from trajectory. MAG fit repeated and improved. Complex compensators like battery current and iron matrix assessed but do not improve calibration much. New scalars did improve calibration significantly, though.
 
-Managed to do a loop in `ACRO` - I am finding the *Harp* quite darty and enjoyable to fly manually. It was quite tight: ***.
+Managed to do a loop in `ACRO` - I am finding the *Harp* quite darty and enjoyable to fly manually. It was quite tight, probably no larger than 30ft vertically. `FBWA` is quite sheltered,
 
 I noticed that I have no power measurements on OSD except for used mAh. This is not ideal.
 
