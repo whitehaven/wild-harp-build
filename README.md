@@ -158,7 +158,7 @@ Autoland worked well again, but started high. I was able to input pitch down, wh
 
 Max reliable speed on log is 35.31 m/s = 74.5 mph, but I didn't make a lengthy straight acceleration attempt.
 
-Cooling is still not a problem.
+Cooling is not a problem, but I am concerned the nose cone (which I cut open wider) is providing too much drag. This is a future concern.
 
 #### Tasks opened
 
@@ -172,11 +172,12 @@ Cooling is still not a problem.
 
 #### Tasks completed
 
-- [x] level stall speed estimated 7.5 m/s = 16.777 mph, will set minimum airspeed accordingly to 120% = 9 m/s, which is the default value
-- [x] FBWB replaced with Cruise
 - [x] **`investigation`** landing altitude problem fix - manual control to guide glideslope was acceptable alone
 - [x] change ELRS rate to 150Hz for range (cancelled - was not a limiting factor)
+- [x] FBWB replaced with Cruise
 - [x] improved MAGfit compass calibration
+- [x] level stall speed estimated 7.5 m/s = 16.777 mph, will set minimum airspeed accordingly to 120% = 9 m/s, which is the default value
+- [x] MAVlink updated and set recommended parameters for SiK telemetry radio
 
 ### 2024-09-08 - **Motor Mount**
 
