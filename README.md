@@ -126,7 +126,7 @@ I think this has taught me that it has a slower minimum speed than I would have 
 
 A servo 4 also had some autotrim changes which are added here.
 
-### Tasks completed
+#### Tasks completed
 
 - [x] added base checklist to avoid forgetting stuff on the way out to the field
 - [x] change OSD to mph
@@ -136,7 +136,7 @@ A servo 4 also had some autotrim changes which are added here.
 - [x] takeoff distance increased to reflect typical airfield size
 - [x] UART4 configured as SiK radio interface with appropriate rates
 
-### Tasks opened
+#### Tasks opened
 
 - [ ] change ELRS rate to 150 for range
 - [ ] FBWB -> Cruise instead
@@ -154,17 +154,28 @@ Managed to do a loop in `ACRO` - I am finding the *Harp* quite darty and enjoyab
 
 I noticed that I have no power measurements on OSD except for used mAh. This is not ideal.
 
+Autoland worked well again, but started high. I was able to input pitch down, which I didn't know was possible, and landed quite softly. This did not save the motor mount, however. This was somewhat expected and a known issue with the *Dolphin*.
+
+Max reliable speed on log is 35.31 m/s = 74.5 mph, but I didn't make a lengthy straight acceleration attempt.
+
+Cooling is still not a problem.
+
 #### Tasks opened
 
-- [ ] establish stall/min speed in `FBWA` and `Manual`
 - [ ] establish maximum continuous speed in level flight
-- [ ] do a loop in `ACRO` or `Manual`
+- [ ] establish most efficient cruise speed (will require several straight and level runs at different speeds)
+- [ ] get OSD current monitor to actually display (was 0.0 all flight)
+- [ ] model and build replacement motor mount
+- [ ] set up %, V/cell, or something in OSD
 
 (then set appropriate settings for autopilot)
 
 #### Tasks completed
 
+- [x] level stall speed estimated 7.5 m/s = 16.777 mph, will set minimum airspeed accordingly to 120% = 9 m/s, which is the default value
 - [x] FBWB replaced with Cruise
+- [x] **`investigation`** landing altitude problem fix - manual control to guide glideslope was acceptable alone
+- [x] change ELRS rate to 150Hz for range (cancelled - was not a limiting factor)
 - [x] improved MAGfit compass calibration
 
 ---
@@ -175,21 +186,18 @@ Ongoing task list by context. They should be sorted by priority, then descending
 
 ### Bench Tasks
 
-- [ ] **#nondispatcheable** repair R wingtip tear
-- [ ] bench test ELRS for optimal ELRS rate
-- [ ] set up motor or other locator beep
+- [ ] get OSD current monitor to actually display (was 0.0 all flight)
+- [ ] make D6 charger case/box
+- [ ] set up %, V/cell, or something in OSD
 - [ ] work out VTX cooling/configurability
   - [ ] attach VTX_POWER to RC potentiometer to manually adjust
   - [ ] ?engineer higher-flow nose cone
-- [ ] **`investigation`** landing altitude problem fix
-- [ ] change ELRS rate to 150Hz for range
-- [ ] FBWB -> Cruise instead
-- [ ] landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html):
-- [ ] make D6 charger case/box
 
 ### Field Tests
 
-- [ ] establish stall/min and max reliable speeds for autopilot and landing tuning
+- [ ] autolearn compass (`COMPASS_LEARN` = 3; fly until `have earth field` then `finished` appear)
+- [ ] establish maximum continuous speed in level flight
+- [ ] establish most efficient cruise speed (will require several straight and level runs at different speeds)
 - [ ] test terrain (may need to be live on field)
 
 ### Publication
@@ -200,9 +208,10 @@ Ongoing task list by context. They should be sorted by priority, then descending
 
 ## Future Directions
 
-- redesign nose cone for improved aerodynamics
 - laminate entire body with clear wrap for added strength and lower drag
+- landing flare tune [per Ardupilot docs](https://ardupilot.org/plane/docs/automatic-landing.html)
 - rebuild as VTOL for better landings
+- redesign nose cone for improved aerodynamics
 
 ---
 
@@ -217,7 +226,7 @@ Ongoing task list by context. They should be sorted by priority, then descending
 #### Body
 
 1. **Consider a traditional wingplan** rather than essentially a long-bodied flying wing. It requires a lot of speed to stay up, which makes every phase of flight quite difficult. I would consider the AtomRC Dolphin to be an intermediate-level plane.
-1. **Avoid CA glue**, *even [foam-safe varieties](https://bsi-inc.com/hardware/super_gold_plus.html)*. CA glue's failure mode is brittle which does not pair well with foam. Partial exception for rigid or small contact areas. **Use hot glue at low-temp** (on two-temp glue gun) **or maybe [FoamTac](https://www.beaconadhesives.com/product/foam-tac/)**, but I haven't tried that.
+1. **Minimize CA glue**, *even [foam-safe varieties](https://bsi-inc.com/hardware/super_gold_plus.html)*. CA glue's failure mode is brittle which does not pair well with foam. Partial exception for rigid or small contact areas. **Use hot glue at low-temp** (on two-temp glue gun) **or maybe [FoamTac](https://www.beaconadhesives.com/product/foam-tac/)**, but I haven't tried that.
 1. Hot glue at low-temp is good for most tasks. It is suprisingly, even shockingly robust to me, having thought of it as a craft-only solution before now. I got a [midrange two-temp gun](https://www.amazon.com/Surebonder-PRO2-100-100-Watt-Temperature-Industrial/dp/B006IY359K), and the strength is only a bit less than I am concerned with UV resistance. It seems to slightly melt, and thus weld, to syrofoam (I haven't messed with low-melt glues, which I believe is something besides using normal sticks on high or low temp.) Hot glue can be sculpted well while hot and trimmed away when cold. One or the other may be convenient for an application.
 1. **VHB tape is superb** for mounting components. I crashed my plane quite hard nose-first on its first flight during a [dropped-wing event](#2024-08-17---flight-001-controlled-flight-into-terrain), and even though the FC module came off the styrofoam, it stuck back down after one attempt, and holds the entire plane's weight when held from the mount plate.
 
