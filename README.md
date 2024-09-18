@@ -194,6 +194,22 @@ From there:
 - [x] model and build replacement motor mount, posted to [Printables](https://www.printables.com/model/1001244-atomrc-dolphin-motor-mount-with-adapter)
 - [x] added script to remove readonly fields from Ardupilot param dumps to reduce errors with manual removal
 
+### 2024-09-18 - **Training Wheels Off**
+
+Bench tested failsafes - it circles at first (to re-establish radio contact by reorienting antennas), and then goes into Return to Loiter (`RTL`). This works as intended. (Apparently it was already set correctly, no changes were made, but I feel a little better about pushing distance a bit more.)
+
+I think the weak link at this point is FPV antennas - the stock ones are known to be subpar and can be cheaply imporved to better "lollipop"-style ones.
+
+#### Flight Goals
+
+- [ ] establish maximum continuous speed in level flight
+- [ ] establish most efficient cruise speed (will require several straight and level runs at different speeds)
+
+#### Tasks completed
+
+- [x] Bench testing of short and long radio failsafe completed, working
+- [x] reconfigured OSD to show real current draw and cell voltage
+
 ---
 
 ## Open Tasks
