@@ -194,21 +194,29 @@ From there:
 - [x] model and build replacement motor mount, posted to [Printables](https://www.printables.com/model/1001244-atomrc-dolphin-motor-mount-with-adapter)
 - [x] added script to remove readonly fields from Ardupilot param dumps to reduce errors with manual removal
 
-### 2024-09-18 - **Training Wheels Off**
+### 2024-09-18 - **Flight 006 - Square Field Horror**
 
 Bench tested failsafes - it circles at first (to re-establish radio contact by reorienting antennas), and then goes into Return to Loiter (`RTL`). This works as intended. (Apparently it was already set correctly, no changes were made, but I feel a little better about pushing distance a bit more.)
 
 I think the weak link at this point is FPV antennas - the stock ones are known to be subpar and can be cheaply imporved to better "lollipop"-style ones.
 
-#### Flight Goals
+Tried a new field with many more obstacles. On takeoff, almost hit trees twice due to R-rolled throw. Pretty scary. I continued to have severe roll oscillations to the point that I ran `Autotune` again with the hypothesis that the somewhat high roll derivative term was the cause. This may have all come down to my rather open nose cone which likely creates weird drag. Sure enough, D and P on the roll axis were reduced substantially, and the oscillation was apparently eliminated.
 
-- [ ] establish maximum continuous speed in level flight
-- [ ] establish most efficient cruise speed (will require several straight and level runs at different speeds)
+Stall speed confirmed at about 20 mph, no changes made. Stall recovery practice
+
+Flight mode selection somehow got scrambled. I was SiK linked, luckily, so I was able to change modes that way.
+
+Pretty fun time in retrospect, and no passers-by seemed to notice or care. My choice of cell rest volt for OSD failed and reported low values - it was showing 3.1V, but I landed with 3.7V, leaving at least 50% power in the tank.
+
+#### Tasks opened
+
+- [ ] reconfigure flight mode control on S3 potentiometer
+- [ ] reconfigure OSD to show useful cell voltages
 
 #### Tasks completed
 
 - [x] Bench testing of short and long radio failsafe completed, working
-- [x] reconfigured OSD to show real current draw and cell voltage
+- [x] updated `Autotune` which elminated previously noted roll oscillation
 
 ---
 
@@ -219,9 +227,9 @@ Ongoing task list by context. They should be sorted by priority, then descending
 ### Bench Tasks
 
 - [ ] attach VTX_POWER to RC potentiometer to manually adjust
-- [ ] get OSD current monitor to actually display (was 0.0 all flight)
 - [ ] make D6 charger case/box
-- [ ] set up %, V/cell, or something in OSD
+- [ ] reconfigure flight mode control on S3 potentiometer
+- [ ] reconfigure OSD to show useful cell voltages
 
 ### Field Tests
 
